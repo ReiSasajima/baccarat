@@ -1,0 +1,102 @@
+*{
+  margin: 0 0 0 0;
+  /* font-family: 'Hachi Maru Pop'; */
+  font-family: "Nico Moji";
+  background-color: #8b0000;
+}
+header{
+  background-color: #06862a;
+  text-align: center;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.title{
+  color: white;
+  font-size: xx-large;
+  background-color: transparent;
+  text-decoration: none;
+}
+.section-title{
+  text-align: center;
+  font-size: xx-large;
+  color: white;
+  background-color: #090909;
+  width: 70%;
+  height: 3em;
+  padding-top: 1em;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-main{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  background-color: #090909;
+  width: 70%;
+  height: 6em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+input[type="text"], input[type="number"]{
+  background-color: white;
+  font-size: xx-large;
+  border: 0.1em solid yellow;
+  border-radius: 5px;
+}
+input[type="submit"]{
+  background-color: white;
+  font-size: xx-large;
+  border: 0.1em solid yellow;
+  border-radius: 5px;
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+  border: 0.5em solid yellow;
+  counter-reset: rowCount;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  color: white;
+}
+.rank-no, .rank-name, .rank-score{
+  background-color: yellow;
+  color: #262626;
+  height: 3em;
+}
+.data-no, .data-name, .data-score{
+  background-color: #06862a;
+  border: 0.1em solid yellow;
+}
+.rank-no{
+  width: 5em;
+}
+.rank-name{
+  width: 60%;
+}
+.rank-score{
+  width: 35%;
+}
+table>tbody>tr {
+  counter-increment: rowCount;
+  height: 2em;
+  font-size: xx-large;
+  
+}
+
+table>tbody>tr>td:first-child::before {
+  content: counter(rowCount);
+}

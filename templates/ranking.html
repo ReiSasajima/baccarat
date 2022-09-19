@@ -1,0 +1,33 @@
+{% extends 'template.html' %}
+{% block content %}
+<h1 class="section-title">ランキング</h1>
+<div class="section-main">
+  <form action="/register" method="POST">
+    <input type="text" name="name" placeholder="なまえ">
+    <input type="number" name="score" placeholder="スコア">
+    <input type="submit" value="追加する">
+  </form>
+</div>
+
+<div class="section-main">
+  <table border="1">
+    <thead>
+      <tr>
+        <th class="rank-no">No</th>
+        <th class="rank-name">なまえ</th>
+        <th class="rank-score">スコア</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for score in scores %}
+      <tr>
+        <td class="data-no"></td>
+        <td class="data-name">{{score[0]}}</td>
+        <td class="data-score">{{score[1]}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

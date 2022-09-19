@@ -1,0 +1,14 @@
+{% extends 'template.html' %}
+{% block content %}
+<h1 class="section-title">スコアの追加</h1>
+<a href="/">ランキング一覧へ</a>
+<div class="section-main">
+  <form action="/register" method="POST">
+    <input type="text" name="name" placeholder="なまえ">
+    <input type="number" name="score" placeholder="スコア">
+    <input type="submit">
+  </form>
+</div>
+
+
+{% endblock %}
