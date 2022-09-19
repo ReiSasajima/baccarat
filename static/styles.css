@@ -106,3 +106,9 @@ table>tbody>tr {
 table>tbody>tr>td:first-child::before {
   content: counter(rowCount);
 }
+
+@media screen and (max-width: 768px) {
+  form{
+    display: block;
+  }
+}
