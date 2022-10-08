@@ -12,7 +12,7 @@ body{
       "Hiragino Sans",
       Meiryo,
       sans-serif;
-  background-color: #A10352;
+  background-color: #0D8549;
   overflow: hidden;
 }
 header{
@@ -64,7 +64,7 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0D8549;
+  background-color: black ;
   box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
 }
 /* form{
@@ -101,7 +101,7 @@ input[type="submit"]:hover{
 }
 table {
   border-collapse: collapse;
-  border: 0.5em solid #3A3D44;
+  border: 0.5em solid #0D8549;
   border-radius: 5px;
   counter-reset: rowCount;
   text-align: center;
@@ -111,14 +111,17 @@ table {
   width: 85%;
   color: white;
 }
+table tr:nth-child(odd) td {
+  background: red;
+}
 .rank-no, .rank-name, .rank-score{
-  background-color: #3A3D44;
+  background-color: #0D8549;
   color: white;
   height: 20px;
 }
 .data-no, .data-name, .data-score{
-  background-color: #3A3D44;
-  border: 0.1em solid #3A3D44;
+  background-color: black;
+  border: 0.1em solid white;
 }
 .rank-no{
   width: 5em;
@@ -153,6 +156,9 @@ table>tbody>tr>td:first-child::before {
 @media screen and (max-width: 500px) {
   .section-main{
     width: 80%;
+  }
+  table{
+    width: 100%;
   }
 }
 @media screen and (max-width: 370px) {
