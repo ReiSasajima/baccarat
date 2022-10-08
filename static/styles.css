@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'CasinoFont';
+  src: url('./Casino-Italic.ttf');
+}
 body{
   margin: 0 0 0 0;
   /* font-family: 'Hachi Maru Pop'; */
@@ -27,8 +31,9 @@ header{
 }
 .title{
   color: #F9C11C;
-  text-shadow: 3px 3px 0 #9C0025, -3px 3px 0 #9C0025, 3px -3px 0 #9C0025, -3px -3px 0 #9C0025;
+  text-shadow: 3px 3px 0 #A10352, -3px 3px 0 #A10352, 3px -3px 0 #A10352, -3px -3px 0 #A10352;
   font-size: 70px;
+  font-family: 'CasinoFont';
   font-style: italic;
   background-color: transparent;
   text-decoration: none;
@@ -47,7 +52,8 @@ header{
 }
 .section-main{
   margin-top: 10em;
-  height: 200px;
+  height: fit-content;
+  padding: 1%;
   width: 460px;
   margin-left: auto;
   margin-right: auto;
@@ -81,7 +87,7 @@ input[type="text"], input[type="number"]{
 input[type="submit"]{
   background-color: white;
   font-size: x-large;
-  border: solid #A10352 3px ;
+  /* border: solid #A10352 3px ; */
   width: 250px;
   height: 40px;
   border-radius: 30px;
@@ -101,7 +107,7 @@ table {
   margin-right: auto;
   margin-left: auto;
   margin-top: 5em;
-  width: 95%;
+  width: 85%;
   color: white;
 }
 .rank-no, .rank-name, .rank-score{
