@@ -157,7 +157,7 @@ table>tbody>tr>td:first-child::before {
 }
 @media screen and (max-width: 370px) {
   input[type="text"], input[type="number"]{
-    width: 200px;
+    width: 170px;
     margin-left: auto;
     margin-right: auto;
   }
