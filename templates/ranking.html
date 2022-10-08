@@ -1,15 +1,14 @@
 {% extends 'template.html' %}
 {% block content %}
-<h1 class="section-title">ランキング</h1>
 <div class="section-main">
   <form action="/register" method="POST">
     <input type="text" name="name" placeholder="なまえ">
     <input type="number" name="score" placeholder="スコア">
-    <input type="submit" value="追加する">
+    <input type="submit" value="スコアの追加">
   </form>
 </div>
 
-<div class="section-main">
+<div class="ranking-main">
   <table border="1">
     <thead>
       <tr>

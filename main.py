@@ -20,7 +20,10 @@ def register():
   elif request.method == 'POST':
     name = request.form['name']
     score = request.form['score']
-    print(name, score)
+    if not name:
+      return redirect('/')
+    if not score:
+      return redirect('/')
     #スコアの追加
     try:
       cur = conn.cursor()
